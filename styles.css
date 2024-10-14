@@ -1,0 +1,564 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+
+body{
+  overflow-y: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.hero{
+  width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+position: relative;
+padding: 0 5%;
+display: flex;
+align-items:center;
+justify-content: center;
+
+
+}
+.hero iframe{
+  position: absolute;  
+  top: 0;  
+  left: 0;  
+  width: 100%;  
+  height: 100%;  
+  border: none;  
+  z-index: -1;  
+}
+
+nav{
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+padding: 40px 8%;
+display:flex;
+align-items: center;
+justify-content: space-between;
+font-family: 'poppins';
+}
+
+nav ul li{
+  list-style: none;
+  display:inline-block;
+  margin-left: 40px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+.content{
+  text-align: center;
+}
+
+.content h1{
+  font-size: 56px;
+  color:black;
+  font-weight: 400;
+  transition: 0.5s;
+}
+.content h1:hover{
+-webkit-text-stroke: 2px black;
+color: transparent;
+}
+.content h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+h2{
+  padding-top:40px
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index:-1;
+}
+
+@media (min-aspect-ratio: 16/9){
+.back-video{
+width: 100%;
+height: auto;
+}
+}
+
+@media(max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+height:100% ;
+}
+  }
+#about{
+display:inline;
+}
+.me{
+  font-family: 'figtree';
+  font-size: 56px;
+  padding-top: 70px;
+  padding-left: 91px;
+  color: #f5bb00;
+}
+
+.para{
+  font-size:30;
+  text-align: left;
+  font-family:'poppins';
+margin-left: 89px;
+margin-right: 40px;
+padding-top:20px;
+letter-spacing: 0.5px;
+display:flex;
+padding-right: 10px;
+}
+
+.image1{
+width: 356px;
+height: 300px;
+margin-right: 180px;
+border-radius: 50px;
+}
+
+.zoo{
+  padding-top: 13px;
+}
+
+
+.shld{
+  display:inline;
+}
+.para.image{
+  display:inline;
+}
+.about2{
+  display: flex;
+  margin-right: 20px;
+}
+.img {
+ padding-top: 50px;
+  height: 550px;
+}
+.good{
+  font-family: 'figtree';
+  font-size: 56px;
+  padding-top: 50px;
+  padding-left: 100px;
+  color: #f5bb00;
+  padding-bottom: 10px;
+}
+
+.red{
+  border: none;
+  width: 1600px;
+padding-top: 105px;
+
+}
+
+.please{
+
+  padding-top: 30px;
+}
+
+
+
+.work{
+  display:flex;
+}
+
+.work{
+  display:flex;
+  font-family: 'figtree';
+  font-size: 56px;
+  padding-top: 20px;
+  padding-left: 100px;
+  color: #f5bb00;
+background-color: black;
+margin-top: -20px;
+padding-bottom: 20px;
+
+}
+.at.red{
+  display: flex;
+}
+
+
+div.scroll-container {
+  background-color: black;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+.scroll-container iframe{
+border: 1px;
+}
+z
+div.scroll-container img {
+  padding: 10px;
+ 
+
+}
+
+
+
+.sub-title{
+  display:flex;
+  font-family: 'figtree';
+  font-size: 56px;
+  padding-top: 70px;
+  padding-left: 100px;
+  color: #f5bb00;
+}
+
+
+
+.seme {
+  padding-top: 14px;
+  font-size:30;
+  text-align: left;
+  font-family:'poppins';
+margin-left: 89px;
+margin-right: 40px;
+letter-spacing: 0.5px;
+display:flex;
+padding-right: 10px;
+color: white;
+padding-bottom: 10px;
+}
+
+.mail{
+  color: white;
+  padding-top: 2%;
+  font-size:30;
+  text-align: left;
+  font-family:'poppins';
+margin-left: 89px;
+margin-right: 40px;
+letter-spacing: 0.5px;
+display:flex;
+padding-right: 10px;
+padding-left: 19px;
+}
+.contact-left{
+  background-color: black;
+  flex-basis: 35%;
+  
+}
+
+.social-icons{
+padding-left: 105px;
+padding-top: 5px;
+}
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+display: inline-block;
+ transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+  color:#f5bb00;
+  transform: translateY(-5px);
+}
+
+.contact-left p i{
+  color: #ababab;
+  margin-right: 15px;
+}
+
+.sub-title.i{
+padding-top:15px;
+padding-left: 40px;
+}
+
+
+.contact-right{
+  background-color: black;
+  flex-basis: 65%;
+  display:flex;
+}
+.mail.p{
+  display: flex;
+  padding-bottom: 34px;
+}
+
+.btn.btn2{
+  display: inline-block;
+  background:#f5bb00; 
+}
+
+.contact-right form{
+  width: 100%;
+  flex-basis: 65%;
+  padding-left: 87px;
+  padding-top: 40px;
+  
+}
+
+form input, form textarea{
+  width:780px;
+  border:0;
+  outline:none;
+  background: #ababab;
+  padding:15px;
+  margin:15px 0;
+  color: #fff;
+  font-size:18px;
+  border-radius:6px;
+ 
+}
+
+.btn.btn2{
+  background-color: #f5bb00;
+      border: none;
+      color: black;
+      width: 112px;
+      height: 38px;
+      border-radius: 9px;
+      font-weight: 500;
+      font-size: 13px;
+      cursor: pointer;
+      transition:  0.15s;
+}
+
+.btn.btn2:hover{
+  background-color:  rgb(211, 161, 1);}
+
+  .fa-solid.fa-phone{
+    padding-left:21px; 
+  }
+
+  .grh1{
+    display:flex;
+    font-family: 'figtree';
+    font-size: 56px;
+    padding-top: 153px;
+    padding-left: 555px;
+    color: #f5bb00;
+  }
+
+.item{
+  display: inline-block;
+}
+
+.lemo{
+  font-family: 'poppins';
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  
+}
+
+.container{
+  background-color: black;
+  
+}
+
+.qoute1{
+text-align: center;
+padding-top: 40px;
+font-size: 20px;
+
+}
+
+.qoute2{
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 40px;
+  font-size: 20px;
+  }
+
+  .qoute4{
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 50px;
+    font-size: 20px;
+  }
+.pic1{
+  width:350px;
+  border: none;
+  }
+  
+.pic2{
+  width: 600px;
+  border: none;
+}
+
+.pic3{
+  width:320px;
+ height: 460px;
+ border: none;
+}
+.pic4{
+  border: none; 
+}
+.con-container{
+  display: flex;
+  max-width: 1200px;
+  width:100%;
+flex-wrap: wrap;
+justify-content: center;
+padding-left: 230px;
+padding-top: 40px;
+gap: 10px;
+border: none;
+
+}
+
+
+.link a{
+  font-family: 'poppins';
+  font-size: 20px;
+  color: #f5bb00;
+  text-align: center;
+  padding-top: 260px;
+  padding-left: 600px;
+}
+
+.grh2{
+  display:flex;
+    font-family: 'figtree';
+    font-size: 56px;
+    padding-top: 153px;
+    padding-left: 628px;
+    color: #f5bb00;
+}
+.brandt{
+padding-top: 100px;
+display: flex;
+padding-left: 480px;
+
+
+}
+
+
+
+
+.brimg1{
+border-radius: 40px;
+justify-content: center;
+display: flex;
+border: none;
+
+}
+
+.brandti{
+  padding-top: 100px;
+  display: flex;
+  padding-left: 500px;
+  
+
+}
+
+.elixir{
+  color:#f5bb00;
+  font-size: 30px;
+  text-align:left;
+  padding-left: 60px;
+}
+
+.elixirpara{
+  padding-left: 60px;
+  padding-top: 40px;
+  font-size: 20px;
+  font-family: 'poppins';
+}
+
+.pot{
+  padding-left: 440px;
+  padding-top: 40px;
+  
+}
+
+.pot iframe{
+  border:none
+}
+
+.grh3{
+  display:flex;
+    font-family: 'figtree';
+    font-size: 56px;
+    padding-top: 153px;
+    padding-left: 665px;
+    color: #f5bb00;
+}
+
+.pott{
+  padding-left: 500px;
+  padding-top: 40px;
+}
+.pott iframe{
+border: none;
+}
+
+.potter{
+  padding-left: 440px;
+  padding-top: 40px;
+  border:none
+}
+
+.grh4{
+  display:flex;
+    font-family: 'figtree';
+    font-size: 56px;
+    padding-top: 153px;
+    padding-left: 600px;
+    color: #f5bb00;
+}
+
+.arcane{
+  border:none;
+  border-radius: 35px;
+}
+
+.work-item{
+  color: black;
+}
+
+.lemo:hover{
+color: #f5bb00;
+}
+
+ 
+
+ #msg{
+  color:#f5bb00;
+margin-top: -40px;
+display: block;
+ }
